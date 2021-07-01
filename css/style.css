@@ -1,10 +1,13 @@
-
 /* ------color------- */
 :root{
 	--x-white:rgb(255,255,255);
 	--x-black:rgb(0,0,0);
-	--x-green:rgb(105, 217, 83);
-	--cl-bg-header-social-button:var(--x-green);
+	--x-grey:rgb(230,230,230);
+	--x-shadow-grey:rgb(197,198,198);
+	--x-green:rgb(54, 94, 90);
+	--x-light-green:rgb(77,137,124);
+	--x-blue:rgb(28.64.120);
+	--x-yellow:rgb(255,255,0);
 }
 /* -------clear style------- */
 * {
@@ -14,7 +17,6 @@
 	text-decoration: none;
 	cursor: pointer;
 	color: inherit;
-	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
@@ -35,7 +37,7 @@
 	margin: 0;
 	padding: 0;
 }
-/* -------style------- */
+/* -------common styles------- */
 .container {
   width: 580px;
   margin: 0 auto;
@@ -45,89 +47,101 @@
   flex-direction: column;
   min-width: 640px;
   min-height: 100vh;
-  margin: 0;
-  font-family: "Verdana", "Tahoma", sans-serif;
+  font-family: "Jost", "Verdana", "Tahoma", sans-serif;
   font-size: 14px;
-  line-height: 18px;
-  color: #333333;
-  background-color: #eae9f2;
+  color: var(--x-black);
+  background: var(--x-grey);
+	margin: 0;
+	padding: 0;
+}
+/* -------header------- */
+.page-header {
+  background: var(--x-green);
+	color: var(--x-white);
+  box-shadow: 0 4px 0 var(--x-shadow-grey);
+	margin-bottom: 40px;
+}
+.page-header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 40px 0;
+	outline: 1px solid red;
+}
+/* page title */
+.page-title-big-text{
+	font-size: 104px;
+	line-height: 1;
+	text-transform: uppercase;
+	outline: 1px solid red;
+}
+.page-title-small-text{
+	font-size: 13px;
+	text-transform: uppercase;
 }
 /* -------social buttons------- */
+.title-container{
+	display: flex;
+	flex-direction: column;
+	outline: 1px solid red;
+	padding: 15px 0;
+}
+.social-title{
+	margin-bottom: 8px;
+}
 .social-list{
 	display: flex;
 	flex-wrap: wrap;
 }
 .social-item{
-	width: 44px;
-	height: 44px;
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
-	background: var(--cl-bg-header-social-button);
+	background: var(--x-light-green);
+	margin-right: 5px;
+}
+.social-item:last-child{
+	margin-right: 0;
 }
 .social-icon{
 	fill:var(--x-white);
 }
+.main{
+	flex:1 1 auto;
+}
+/* -------section title------- */
 .section-title {
   width: 100%;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
-a {
-  color: rgb(105, 217, 83);
-}
-a:focus {
-  outline-color: #b6aaff;
-}
-.page-header {
-  margin-bottom: 40px;
-  color: #333333;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-.page-header .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-image: url("../img/raccoons.svg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 290px 212px;
-}
-.page-header a {
-  font-size: 16px;
-  line-height: 24px;
-}
-.page-title {
-  margin: 0;
-  margin-bottom: 4px;
-  padding: 0;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
-}
+/* -------about------- */
 .about {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 .about-image {
-  width: 147px;
-  height: 147px;
+  width: 119px;
+  height: 119px;
   border-radius: 50%;
 }
 .about-content {
   width: 410px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.8;
 }
-.about-content p {
-  margin: 0;
+.about-content .about-page {
   margin-bottom: 12px;
-  padding: 0;
 }
+.about-content .about-page:last-child {
+  margin-bottom: 0;
+}
+/* -------status------- */
 .status {
   margin-bottom: 32px;
 }
@@ -144,17 +158,9 @@ a:focus {
   color: #333333;
   background-color: #ffffff;
 }
-
 .contacts {
   margin-bottom: 82px;
 }
-
-.contacts img {
-  width: 146px;
-  height: 146px;
-  margin-right: 24px;
-}
-
 .contacts p {
   margin: 0;
   margin-bottom: 12px;
@@ -162,23 +168,20 @@ a:focus {
   font-size: 14px;
   line-height: 24px;
 }
-
 p.contacts-name {
   margin-top: 20px;
   margin-bottom: 16px;
   font-weight: bold;
   line-height: 20px;
 }
-
 .contacts a {
   font-size: 16px;
   line-height: 24px;
 }
-
+/* -------footer------- */
 .page-footer {
-  margin-top: auto;
-  color: #ffffff;
-  background-color: #6653d9;
+  color: var(--x-white);
+  background-color: var(--x-green);
 }
 
 .page-footer .container {
