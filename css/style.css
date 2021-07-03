@@ -1,17 +1,17 @@
 /* ------color------- */
-:root{
-	--x-white:rgb(255,255,255);
-	--x-black:rgb(0,0,0);
-	--x-grey:rgb(230,230,230);
-	--x-shadow-grey:rgb(197,198,198);
-	--x-green:rgb(54, 94, 90);
-	--x-light-green:rgb(77,137,124);
-	--x-blue:rgb(28,64,120);
-	--x-yellow:rgb(255,255,0);
+:root {
+	--x-white: rgb(255, 255, 255);
+	--x-black: rgb(0, 0, 0);
+	--x-grey: rgb(230, 230, 230);
+	--x-shadow-grey: rgb(197, 198, 198);
+	--x-green: rgb(54, 94, 90);
+	--x-light-green: rgb(77, 137, 124);
+	--x-blue: rgb(28, 64, 120);
+	--x-yellow: rgb(255, 255, 0);
 }
 /* -------clear style------- */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 .link-clear {
 	text-decoration: none;
@@ -39,26 +39,26 @@
 }
 /* -------common styles------- */
 .container {
-  width: 580px;
-  margin: 0 auto;
+	width: 580px;
+	margin: 0 auto;
 }
 .page {
-  display: flex;
-  flex-direction: column;
-  min-width: 640px;
-  min-height: 100vh;
-  font-family: "Jost", "Verdana", "Tahoma", sans-serif;
-  font-size: 14px;
-  color: var(--x-black);
-  background: var(--x-grey);
+	display: flex;
+	flex-direction: column;
+	min-width: 640px;
+	min-height: 100vh;
+	font-family: "Jost", "Verdana", "Tahoma", sans-serif;
+	font-size: 14px;
+	color: var(--x-black);
+	background: var(--x-grey);
 	margin: 0;
 	padding: 0;
 }
 /* -------header------- */
 .page-header {
-  background: var(--x-green);
+	background: var(--x-green);
 	color: var(--x-white);
-  box-shadow: 0 4px 0 var(--x-shadow-grey);
+	box-shadow: 0 4px 0 var(--x-shadow-grey);
 	margin-bottom: 30px;
 }
 .page-header .container {
@@ -68,89 +68,89 @@
 	padding: 40px 0;
 }
 /* page title */
-.page-title-big-text{
+.page-title-big-text {
 	display: block;
 	font-size: 104px;
 	line-height: 1;
 	text-transform: uppercase;
 }
-.page-title-small-text{
+.page-title-small-text {
 	display: block;
 	position: relative;
 	font-size: 13px;
 	text-transform: uppercase;
 	margin-left: 30px;
 }
-.page-title-small-text:before{
+.page-title-small-text:before {
 	content: "";
 	position: absolute;
 	top: 50%;
 	left: -25px;
-	transform: translate(0,-50%);
+	transform: translate(0, -50%);
 	height: 2px;
 	width: 20px;
 	background: var(--x-yellow);
 }
-.page-title-small-text:after{
+.page-title-small-text:after {
 	content: "";
 	position: absolute;
 	top: 50%;
 	left: -30px;
-	transform: translate(0,-50%);
+	transform: translate(0, -50%);
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
 	background: var(--x-yellow);
 }
 /* -------social buttons------- */
-.title-container{
+.title-container {
 	display: flex;
 	flex-direction: column;
 	padding: 15px 0;
 }
-.social-title{
+.social-title {
 	margin-bottom: 8px;
 }
-.social-list{
+.social-list {
 	display: flex;
 	flex-wrap: wrap;
 }
-.social-item{
+.social-item {
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
 	background: var(--x-light-green);
 	margin-right: 5px;
 }
-.social-item:last-child{
+.social-item:last-child {
 	margin-right: 0;
 }
 .social-item:hover,
-.social-item:focus{
+.social-item:focus {
 	background: var(--x-white);
 }
 .social-item:hover .social-icon,
-.social-item:focus .social-icon{
+.social-item:focus .social-icon {
 	fill: var(--x-green);
 }
-.social-link{
+.social-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 100%;
 }
-.social-icon{
-	fill:var(--x-white);
+.social-icon {
+	fill: var(--x-white);
 }
-.main{
-	flex:1 1 auto;
+.main {
+	flex: 1 1 auto;
 }
 /* -------section title------- */
 .section-title {
-  width: 100%;
-  font-size: 19px;
-  line-height: 24px;
+	width: 100%;
+	font-size: 19px;
+	line-height: 24px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--x-blue);
@@ -158,49 +158,49 @@
 }
 /* -------about------- */
 .about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 30px;
 }
 .about-image {
-  width: 119px;
-  height: 119px;
-  border-radius: 50%;
+	width: 119px;
+	height: 119px;
+	border-radius: 50%;
 }
 .about-content {
-  width: 410px;
-  font-size: 14px;
-  line-height: 1.8;
+	width: 410px;
+	font-size: 14px;
+	line-height: 1.8;
 }
 .about-content .about-page {
-  margin-bottom: 12px;
+	margin-bottom: 12px;
 }
 .about-content .about-page:last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 /* -------status------- */
 .status {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 .status-page {
-  border-radius: 32px 0;
-  font-size: 16px;
-  line-height: 1.5;
-  font-style: italic;
-  color: var(--x-white);
-  background: var(--x-light-green);
+	border-radius: 32px 0;
+	font-size: 16px;
+	line-height: 1.5;
+	font-style: italic;
+	color: var(--x-white);
+	background: var(--x-light-green);
 	padding: 12px 32px 16px 32px;
 }
 /* -------contacts------- */
 .contacts {
 	min-height: 257px;
 	font-size: 18px;
-  line-height: 1.5;
+	line-height: 1.5;
 	background: url("../img/tennis-ball.svg") right top no-repeat;
 	margin-bottom: 30px;
 }
-.contacts .section-title{
+.contacts .section-title {
 	margin-bottom: 50px;
 }
 .contacts-name {
@@ -212,34 +212,34 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 230px;
-  font-size: 16px;
-  line-height: 1.5;
+	font-size: 16px;
+	line-height: 1.5;
 	margin-bottom: 10px;
 	padding: 0px 0;
 }
-.contacts-text:last-child{
+.contacts-text:last-child {
 	margin-bottom: 0;
 }
-.contacts-link{
+.contacts-link {
 	color: var(--x-green);
 	padding: 5px;
 }
-.contacts-link:hover{
+.contacts-link:hover {
 	border: 2px solid var(--x-green);
 	border-radius: 20px 0;
 	margin: -2px;
 }
 /* -------footer------- */
 .page-footer {
-  color: var(--x-white);
-  background-color: var(--x-green);
+	color: var(--x-white);
+	background-color: var(--x-green);
 }
 .page-footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 12px;
-  padding-bottom: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 12px;
+	padding-bottom: 14px;
 }
 .visually-hidden {
 	position: absolute;
