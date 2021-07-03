@@ -69,11 +69,13 @@
 }
 /* page title */
 .page-title-big-text{
+	display: block;
 	font-size: 104px;
 	line-height: 1;
 	text-transform: uppercase;
 }
 .page-title-small-text{
+	display: block;
 	position: relative;
 	font-size: 13px;
 	text-transform: uppercase;
